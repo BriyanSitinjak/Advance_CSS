@@ -1,12 +1,3 @@
-.btn--white {
-    background-color: $color-white;
-    color: $color-grey;
-
-    &:after{
-        background-color: $color-white;
-    }
-}
-
 /* Pseudo Class */
 .btn {
     &:link, &:visited {
@@ -27,6 +18,24 @@
         &::after {
             transform: scaleX(1.4) scaleY(1.6); /* scale into X and Y*/
             opacity: 0;
+        }
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
         }
     }
 
